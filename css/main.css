@@ -1,4 +1,4 @@
-p, li, h5, h6 {
+p, li, h5, h6, h3 {
   font-family: Arapey;
 }
 
@@ -22,7 +22,7 @@ body {
 }
 
 #infoUlOne{
-  font-size: 10px;
+  font-size: 12px;
   color: white;
   display: inline;
   list-style: square;
@@ -31,7 +31,7 @@ body {
 
 
 .infoUl {
-  font-size: 10px;
+  font-size: 12px;
   color: white;
   display: inline;
   list-style: square;
