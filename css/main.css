@@ -1,3 +1,7 @@
+p, li, h5, h6 {
+  font-family: Arapey;
+}
+
 #header-bg {
   background-image: url('../images/header-bg_repeat.jpg');
   height: 198px;
@@ -16,6 +20,15 @@ body {
   position: absolute;
   margin-top: -140px;
 }
+
+#infoUlOne{
+  font-size: 10px;
+  color: white;
+  display: inline;
+  list-style: square;
+  margin: 2px 10px 0 0
+}
+
 
 .infoUl {
   font-size: 10px;
@@ -81,6 +94,10 @@ body {
   text-align: center;
 }
 
+.galleryTagline {
+  padding-top: 20px;
+}
+
 #secondRow {
   padding-top: 40px;
   padding-bottom: 30px;
@@ -92,4 +109,22 @@ body {
 
 .spotlightRow {
   padding-top: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.learnMore {
+  color: gold;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+
+.footerRow {
+  margin-top: -200px;
+}
+
+#pName {
+  margin-top: -20px;
 }
