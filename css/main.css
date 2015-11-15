@@ -105,3 +105,19 @@ a {
 .flexslider {
   margin-top: 2%;
 }
+
+#rotator1 {
+  transform: rotate(-.5deg)
+}
+
+#rotator2 {
+  transform: rotate(1.5deg)
+}
+
+#rotator3 {
+  transform: rotate(-1deg)
+}
+
+#rotator4 {
+  transform: rotate(2deg)
+}
