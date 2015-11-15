@@ -58,40 +58,11 @@ body {
   margin-left: 10%;
 }
 
-#rotator1 {
-  position: absolute;
-  z-index: 4;
-  border: 10px solid white;
-}
-
-#rotator2 {
-  position: absolute;
-  z-index: 3;
-  transform: rotate(2deg);
-  border: 10px solid white;
-}
-
-#rotator3 {
-  position: absolute;
-  z-index: 2;
-  transform: rotate(1.5deg);
-  border: 10px solid white;
-}
-
-#rotator4 {
-  position: absolute;
-  z-index: 1;
-  transform: rotate(1deg);
-  border: 10px solid white;
-}
-
 #galleryButton {
-  margin-top: 10px;
   background-color: gold;
   border-radius: 8px;
   color: white;
   font-size: 10px;
-  text-align: center;
 }
 
 .galleryTagline {
@@ -123,8 +94,14 @@ a {
 
 .footerRow {
   margin-top: -200px;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 #pName {
   margin-top: -20px;
+}
+
+.flexslider {
+  margin-top: 2%;
 }
