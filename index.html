@@ -4,6 +4,7 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/skeleton.css">
   <link href='https://fonts.googleapis.com/css?family=Arapey' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/flexslider.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <title>Cottage on Main</title>
 </head>
@@ -33,13 +34,24 @@
     </div> -->
 </div>
 <div class="row" id="secondRow">
-  <img class="five columns offset-by-two" id="rotator1" src="images/rotator-1.jpg">
-  <img class="five columns offset-by-two" id="rotator2" src="images/rotator-2.jpg">
-  <img class="five columns offset-by-two" id="rotator3" src="images/rotator-3.jpg">
-  <img class="five columns offset-by-two" id="rotator4" src="images/rotator-4.jpg">
-  <h3 class="galleryTagline three columns offset-by-seven">Home Furnishings & Accessories</h3>
-  <p class="three columns offset-by-seven">Cottage on Main offerts the perfect way to express your French country style.  From custom furniture to decorative accessories, we provide a vast array of home decor solutions.  Our collection of French country merchandise is beautiful yet practical.</p>
-  <button class="two columns offset-by-seven" id="galleryButton">VIEW THE GALLERY >></button>
+  <div class="flexslider five columns offset-by-two">
+    <ul class="slides">
+      <li>
+        <img src="images/rotator-1.jpg" />
+      </li>
+      <li>
+        <img src="images/rotator-2.jpg" />
+      </li>
+      <li>
+        <img src="images/rotator-3.jpg" />
+      </li>
+    </ul>
+  </div>
+  <div class="three columns">
+    <h3 class="galleryTagline">Home Furnishings & Accessories</h3>
+    <p>Cottage on Main offerts the perfect way to express your French country style.  From custom furniture to decorative accessories, we provide a vast array of home decor solutions.  Our collection of French country merchandise is beautiful yet practical.</p>
+    <button id="galleryButton">VIEW THE GALLERY >></button>
+  </div>
 </div>
 <div class="spotlightRow row">
   <div class="spotlight three columns offset-by-two">
@@ -66,4 +78,7 @@
   <img class="footerRow ten columns offset-by-one" src="images/footer-overlay_with_shadows.png">
 </div>
 </body>
+<script type="text/javascript" src="jscripts/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="jscripts/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="jscripts/main.js"></script>
 </html>
