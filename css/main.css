@@ -62,7 +62,8 @@ body {
   background-color: gold;
   border-radius: 8px;
   color: white;
-  font-size: 10px;
+  font-size: 15px;
+  font-family: Arapey;
 }
 
 .galleryTagline {
@@ -94,8 +95,6 @@ a {
 
 .footerRow {
   margin-top: -200px;
-  margin-left: 2%;
-  margin-right: 2%;
 }
 
 #pName {
@@ -106,18 +105,41 @@ a {
   margin-top: 2%;
 }
 
-#rotator1 {
-  transform: rotate(-.5deg)
-}
-
 #rotator2 {
-  transform: rotate(1.5deg)
+  transform: rotate(.5deg)
 }
 
 #rotator3 {
-  transform: rotate(-1deg)
+  transform: rotate(-.5deg)
 }
 
 #rotator4 {
-  transform: rotate(2deg)
+  transform: rotate(1deg)
+}
+
+input {
+  float: right;
+}
+
+#emailInput {
+  margin-top: -12%;
+}
+
+#newsletterTag {
+  text-align: center;
+  font-family: Arapey;
+  color: white;
+  margin-bottom: 1px;
+}
+
+#submit {
+  background-color: gold;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  font-family: Arapey;
+}
+
+input {
+  margin: 2px;
 }
