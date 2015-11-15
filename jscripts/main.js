@@ -7,6 +7,8 @@ $('#mailInput').attr('placeholder','EMAIL');
 
 $('#submit').on('click', function(){
   var name = $('#nameInput').val();
-  var input = $('#mailInput').val();
-  //post request goes here for mailing plugin
+  var mail = $('#mailInput').val();
+  if(name && mail){
+    //post request here
+  }
 })
