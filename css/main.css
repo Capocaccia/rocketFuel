@@ -1,14 +1,26 @@
-p, li, h5, h6, h3 {
+p, h5, h6, {
   font-family: Arapey;
+}
+
+body {
+  background-image: url('../images/main-bg_repeat.jpg');
+}
+
+.infoUl {
+  font-family: Arapey;
+}
+
+#nameInput, #mailInput {
+  margin: 2px;
+}
+
+.learnMore {
+  text-decoration: none;
 }
 
 #header-bg {
   background-image: url('../images/header-bg_repeat.jpg');
   height: 198px;
-}
-
-body {
-  background-image: url('../images/main-bg_repeat.jpg');
 }
 
 #overlay {
@@ -68,6 +80,7 @@ body {
 
 .galleryTagline {
   padding-top: 20px;
+  font-family: Arapey;
 }
 
 #secondRow {
@@ -81,10 +94,6 @@ body {
 
 .spotlightRow {
   padding-top: 50px;
-}
-
-a {
-  text-decoration: none;
 }
 
 .learnMore {
@@ -117,10 +126,6 @@ a {
   transform: rotate(1deg)
 }
 
-input {
-  float: right;
-}
-
 #emailInput {
   margin-top: -12%;
 }
@@ -138,8 +143,4 @@ input {
   color: white;
   font-size: 15px;
   font-family: Arapey;
-}
-
-input {
-  margin: 2px;
 }
