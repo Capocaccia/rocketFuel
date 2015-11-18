@@ -81,13 +81,18 @@
   <img class="footerRow u-max-full-width ten columns offset-by-one" src="images/footer-overlay_with_shadows.png">
   <div class="two columns offset-by-eight" id="emailInput">
     <p id="newsletterTag">Join our E-Newsletter List</p>
-    <input id="nameInput">
-    <input id="mailInput">
-    <button id="submit">SUBMIT</button>
+    <form id="newsForm">
+      <span class="nameSpan"></span>
+      <input id="nameInput">
+      <span class="emailSpan"></span>
+      <input id="mailInput">
+      <button id="submit">SUBMIT</button>
+    </form>
   </div>
 </div>
 </body>
 <script type="text/javascript" src="jscripts/jquery-1.11.3.js"></script>
 <script type="text/javascript" src="jscripts/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="node_modules/validator/validator.min.js"></script>
 <script type="text/javascript" src="jscripts/main.js"></script>
 </html>
