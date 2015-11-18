@@ -1,0 +1,22 @@
+{
+  "name": "rocketfuel",
+  "version": "1.0.0",
+  "description": "rocketFuel Coding Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Capocaccia/rocketFuel.git"
+  },
+  "author": "Carter Capocaccia <carter.capocaccia@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Capocaccia/rocketFuel/issues"
+  },
+  "homepage": "https://github.com/Capocaccia/rocketFuel#readme",
+  "dependencies": {
+    "validator": "^4.2.1"
+  }
+}
