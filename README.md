@@ -5,4 +5,6 @@ Steps for use:
 
 Clone repo
 
+NPM Install
+
 Start local HTTP-SERVER
