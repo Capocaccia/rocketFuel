@@ -6,6 +6,10 @@ body {
   background-image: url('../images/main-bg_repeat.jpg');
 }
 
+span {
+  color: red;
+}
+
 .infoUl {
   font-family: Arapey;
 }
