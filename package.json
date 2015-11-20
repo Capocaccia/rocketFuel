@@ -18,5 +18,9 @@
   "homepage": "https://github.com/Capocaccia/rocketFuel#readme",
   "dependencies": {
     "validator": "^4.2.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-livereload": "^3.8.1"
   }
 }
