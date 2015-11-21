@@ -15,7 +15,15 @@ var mail = $('#mailInput').val();
     $('#nameInput').val('');
     $('#mailInput').val('');
   } else if(!validator.isEmail(mail)){
-    $( ".emailSpan" ).text( "Email not valid." ).show().fadeOut( 4000 );
+    $( ".emailSpan" ).text( "Email not valid." ).show().fadeOut( 2000 );
+    $( "#mailInput" ).effect( "shake", {times:3}, 1000 );
+  } else if(!name){
+    $( ".nameSpan" ).text( "Please enter your name." ).show().fadeOut( 2000 );
+    $( "#nameInput" ).effect( "shake", {times:3}, 1000 );
   }
   event.preventDefault();
 });
+
+// $('#galleryButton').on('click', function(){
+//   window.location.href = "about-us.html";
+// })
