@@ -27,3 +27,7 @@ var mail = $('#mailInput').val();
 // $('#galleryButton').on('click', function(){
 //   window.location.href = "about-us.html";
 // })
+
+$('#galleryButton').click(function(){
+  $('body').load('about-us.html');
+});
