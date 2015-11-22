@@ -148,3 +148,10 @@ span {
   font-size: 15px;
   font-family: Arapey;
 }
+
+.galleryImage{
+  position: absolute;
+  border: 4px solid white;
+  margin-top: 20px;
+  cursor: pointer;
+}
