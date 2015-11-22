@@ -1,36 +1,76 @@
-//constructor function for array items
-var galleryArray = new Array();
-//each one of these creates a new image in the array and creates a .src key as the images source
-galleryArray[0] = new Image();
-galleryArray[0].src = "images/rotator-1.jpg"
+// I decided there was a better way to do this so I commented out this code.
+// //constructor function for array items
+// var galleryArray = new Array();
+// //creates a new image in the array and creates a .src as the images source
+// galleryArray[0] = new Image();
+// galleryArray[0].src = "images/rotator-1.jpg"
+// //creates a new image in the array and creates a .src as the images source
+// galleryArray[1] = new Image();
+// galleryArray[1].src = "images/rotator-2.jpg"
+// //creates a new image in the array and creates a .src as the images source
+// galleryArray[2] = new Image();
+// galleryArray[2].src = "images/rotator-3.jpg"
+// //creates a new image in the array and creates a .src as the images source
+// galleryArray[3] = new Image();
+// galleryArray[3].src = "images/rotator-4.jpg"
 
-galleryArray[1] = new Image();
-galleryArray[1].src = "images/rotator-2.jpg"
+//for loop goes through each item in the array and appends the images to the gallery.  New images can be added with ease.
+// for(var i = 0; i < galleryArray.length; i++){
+//   $('.gallery').append("<img class='galleryImage' src=" + galleryArray[i].src + ">")
+// }
 
-galleryArray[2] = new Image();
-galleryArray[2].src = "images/rotator-3.jpg"
+// //working on changing the image on click.  Doesnt work perfectly just yet.
+// $('.galleryImage').on("click", function changeImage(){
+//   var index = Math.floor(Math.random() * galleryArray.length);
+//   console.log("this" + " " + this.src)
+//   console.log("gallery" + " " +  galleryArray[index].src)
+//   if(this.src === galleryArray[index].src){
+//     changeImage();
+//   } else if(this.src !== galleryArray[index].src){
+//     this.src = galleryArray[index].src
+//   }
+// })
 
-galleryArray[3] = new Image();
-galleryArray[3].src = "images/rotator-4.jpg"
+//creates empty array for storage of images
+var galleryArray = [];
 
-//for loop goes through each item in the array and appends the images to the gallery.  New images can be added with extreme ease.
-for(var i = 0; i < galleryArray.length; i++){
-  $('.gallery').append("<img class='galleryImage' src=" + galleryArray[i].src + ">")
+//function to add images to array.  Takes in image source as argument.
+function addImage(src) {
+  galleryArray.push(src);
 }
 
-//working on changing the image on click.  Doesnt work perfectly just yet.
-$('.galleryImage').on("click", function changeImage(){
-  var index = Math.floor(Math.random() * galleryArray.length);
-  console.log("this" + " " + this.src)
-  console.log("gallery" + " " +  galleryArray[index].src)
-  if(this.src === galleryArray[index].src){
-    changeImage();
-  } else if(this.src !== galleryArray[index].src){
-    this.src = galleryArray[index].src
-  }
-})
+//Calling the function with each image source.  More images can be added by simply calling the function again with additional sources.
+addImage("images/rotator-1.jpg");
+addImage("images/rotator-2.jpg");
+addImage("images/rotator-3.jpg");
+addImage("images/rotator-4.jpg");
 
-//loads flexslider
+//this function takes in the current source of the image, checks to see if currSrc is the same as the current image being displayed
+//if the current image is the same as currSrc then it calls itself again to get another index value
+function getNewImageSrc(currSrc) {
+  var index = Math.floor(Math.random() * galleryArray.length);
+    if (galleryArray[index] === currSrc) {
+    return getNewImageSrc(currSrc);
+  } else {
+    return galleryArray[index];
+  }
+}
+
+//sets the intial galleryImage source
+$('.galleryImage').attr('src', galleryArray[0]);
+
+//on clicking of the gallery image, gallery image changes
+$('.galleryImage').click(function() {
+  //currSrc = to current image src
+  var currSrc = $(this).attr('src');
+  //newImage = the value returned from getNewImage(currSrc) function
+  var newImage = getNewImageSrc(currSrc);
+  //new src attribute is made using the newImage which is the value returned from getNewImage(currSrc) function
+  $(this).attr('src', newImage);
+});
+
+
+//loads flexslider if being used instead of self created gallery
 $(window).load(function() {
   $('.flexslider').flexslider();
 });
@@ -68,8 +108,3 @@ var mail = $('#mailInput').val();
 // $('#galleryButton').click(function(){
 //   $('body').load('about-us.html');
 // });
-
-
-
-
-
