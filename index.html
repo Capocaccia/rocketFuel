@@ -70,10 +70,14 @@
   <div class="two columns offset-by-eight" id="emailInput">
     <p id="newsletterTag">Join our E-Newsletter List</p>
     <form id="newsForm">
-      <span class="nameSpan"></span>
-      <input id="nameInput">
-      <span class="emailSpan"></span>
-      <input id="mailInput">
+      <div class="nameInputContainer">
+        <span class="nameSpan"></span>
+        <input id="nameInput" type="text" name="name">
+      </div>
+      <div class="mailInputContainer">
+        <span class="emailSpan"></span>
+        <input id="mailInput" type="text" name="email">
+      </div>
       <button id="submit">SUBMIT</button>
     </form>
   </div>
