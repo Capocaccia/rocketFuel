@@ -1,7 +1,3 @@
-p, h5, h6, {
-  font-family: Arapey;
-}
-
 body {
   background-image: url('../images/main-bg_repeat.jpg');
 }
@@ -87,13 +83,9 @@ span {
   font-family: Arapey;
 }
 
-#secondRow {
-  padding-top: 40px;
-  padding-bottom: 30px;
-}
-
 .spotlight {
   margin: 10px;
+  font-family: Arapey;
 }
 
 .spotlightRow {
@@ -116,18 +108,6 @@ span {
 
 .flexslider {
   margin-top: 2%;
-}
-
-#rotator2 {
-  transform: rotate(.5deg)
-}
-
-#rotator3 {
-  transform: rotate(-.5deg)
-}
-
-#rotator4 {
-  transform: rotate(1deg)
 }
 
 #emailInput {
@@ -154,4 +134,30 @@ span {
   border: 4px solid white;
   margin-top: 20px;
   cursor: pointer;
+}
+
+.aboutUs {
+  background-color: gold;
+  text-align: center;
+  font-family: Arapey;
+}
+
+.aboutUsLi {
+  list-style: none;
+}
+
+.aboutUsText {
+  font-family: Arapey;
+}
+
+.firstRow {
+  padding-top: 3%;
+}
+
+.aboutUsNavHeader {
+  border-bottom: 1px solid black;
+}
+
+.houseImage {
+  margin-bottom: 0;
 }
