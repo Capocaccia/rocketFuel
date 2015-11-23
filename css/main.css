@@ -10,8 +10,16 @@ span {
   font-family: Arapey;
 }
 
+#emailInput {
+  margin-top: -13.5%;
+}
+
 #nameInput, #mailInput {
-  margin: 2px;
+margin-bottom: 1rem;
+}
+
+#mailInput {
+  margin-bottom: 5px;
 }
 
 .learnMore {
@@ -110,9 +118,7 @@ span {
   margin-top: 2%;
 }
 
-#emailInput {
-  margin-top: -12%;
-}
+
 
 #newsletterTag {
   text-align: center;
