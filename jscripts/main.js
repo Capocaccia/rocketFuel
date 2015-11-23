@@ -85,26 +85,28 @@ var name = $('#nameInput').val();
 var mail = $('#mailInput').val();
     if(name && validator.isEmail(mail)){
     //post request here
-    $( ".nameSpan" ).text( "Thank you!" ).show().fadeOut( 4000 );
+    $( ".nameSpan" ).text( "Thank you!" ).show().fadeOut( 2000 );
     //resets fields to blank after successful submission
     $('#nameInput').val('');
     $('#mailInput').val('');
-  } else if(!validator.isEmail(mail)){
-    $( ".emailSpan" ).text( "Email not valid." ).show().fadeOut( 2000 );
-    $( "#mailInput" ).effect( "shake", {times:3}, 1000 );
   } else if(!name){
     $( ".nameSpan" ).text( "Please enter your name." ).show().fadeOut( 2000 );
     $( "#nameInput" ).effect( "shake", {times:3}, 1000 );
+  } else if(!validator.isEmail(mail)){
+    $( ".emailSpan" ).text( "Email not valid." ).show().fadeOut( 2000 );
+    $( "#mailInput" ).effect( "shake", {times:3}, 1000 );
   }
   //prevents page from reloading on form submission
   event.preventDefault();
 });
 
+//A way to navigate with JS but I dont think this is what you want
 // $('#galleryButton').on('click', function(){
 //   window.location.href = "about-us.html";
 // })
 
 // working on ajax loading of HTML content
-// $('#galleryButton').click(function(){
-//   $('body').load('about-us.html');
-// });
+//I am just using the "view the gallery" button for now since its already on the page.
+$('#galleryButton').click(function(){
+  $('body').load('about-us.html');
+});
