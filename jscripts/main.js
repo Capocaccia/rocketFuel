@@ -69,12 +69,6 @@ $('.galleryImage').click(function() {
   $(this).attr('src', newImage);
 });
 
-
-//loads flexslider if being used instead of self created gallery
-$(window).load(function() {
-  $('.flexslider').flexslider();
-});
-
 //adds "NAME" and "EMAIL" placeholder text to input fields
 $('#nameInput').attr('placeholder','NAME');
 $('#mailInput').attr('placeholder','EMAIL');
@@ -107,6 +101,29 @@ var mail = $('#mailInput').val();
 
 // working on ajax loading of HTML content
 //I am just using the "view the gallery" button for now since its already on the page.
-$('#galleryButton').click(function(){
-  $('body').load('about-us.html');
-});
+// $('#galleryButton').click(function(){
+//   $('body').load('about-us.html');
+// });
+
+
+// working on jQuery ajax loading of HTML content #2
+// $(document).ready(function(){
+//     $("#galleryButton").click(function(){
+//         $.ajax({url: "about-us.html", success: function(result){
+//             $("body").html(result);
+//         }});
+//     });
+// });
+
+// working on native JavaScript ajax loading of HTML content #3
+$("#galleryButton").click(
+  function loadAboutMe() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      document.getElementById("body").innerHTML = xhttp.responseText;
+    }
+  };
+  xhttp.open("GET", "about-us.html", true);
+  xhttp.send();
+})
