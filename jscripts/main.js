@@ -118,12 +118,12 @@ var mail = $('#mailInput').val();
 // working on native JavaScript ajax loading of HTML content #3
 $("#galleryButton").click(
   function loadAboutMe() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (xhttp.readyState == 4 && xhttp.status == 200) {
-      document.getElementById("body").innerHTML = xhttp.responseText;
-    }
-  };
-  xhttp.open("GET", "about-us.html", true);
-  xhttp.send();
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (xhttp.readyState == 4 && xhttp.status == 200) {
+        document.getElementById("body").innerHTML = xhttp.responseText;
+      }
+    };
+    xhttp.open("GET", "about-us.html", true);
+    xhttp.send();
 })
