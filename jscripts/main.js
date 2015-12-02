@@ -79,7 +79,16 @@ var name = $('#nameInput').val();
 var mail = $('#mailInput').val();
     if(name && validator.isEmail(mail)){
     //post request here
-    $( ".nameSpan" ).text( "Thank you!" ).show().fadeOut( 2000 );
+    $.ajax({
+      type: "POST",
+      url: "postTest",
+      data: "TESTING",
+      success: function(){
+                  $( ".nameSpan" ).text( "Thank you!" ).show().fadeOut( 2000 );
+                },
+      dataType: String,
+      error: alert('Error!  Please re-enter information and try again!')
+    });
     //resets fields to blank after successful submission
     $('#nameInput').val('');
     $('#mailInput').val('');
@@ -93,6 +102,7 @@ var mail = $('#mailInput').val();
   //prevents page from reloading on form submission
   event.preventDefault();
 });
+
 
 //A way to navigate with JS but I dont think this is what you want
 // $('#galleryButton').on('click', function(){
