@@ -119,8 +119,8 @@ var mail = $('#mailInput').val();
 // working on jQuery ajax loading of HTML content #2
 // $(document).ready(function(){
 //     $("#galleryButton").click(function(){
-//         $.ajax({url: "about-us.html", success: function(result){
-//             $("body").html(result);
+//         $.ajax({url: "about-us.html", success: function(){
+//             $("body").load("about-us.html .aboutUsPage");
 //         }});
 //     });
 // });
